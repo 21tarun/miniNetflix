@@ -1,0 +1,29 @@
+.recoHeader{
+    border: 1px solid red;
+
+}
+@media screen and (max-width:1200px){
+    .recoHeader{
+        padding:30px;
+        
+
+
+    }
+    .imgreco{
+        width:50%;
+    }
+}
+@media screen and (max-width:500px){
+    .recoHeader{
+        display: flex;
+        flex-direction: row;
+
+    }
+    .imgreco{
+        border: 1px solid rebeccapurple;
+        height: 50%;
+        width:50%;
+        position: relative;
+        left:0;
+    }
+}

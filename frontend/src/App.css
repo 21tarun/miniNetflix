@@ -1,0 +1,310 @@
+.App{
+  text-align: center;
+  width: 100%;
+  
+  
+
+
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+.start {
+
+  background:
+  linear-gradient(
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)
+  ),
+  url('../public/netflix3.jpg');
+
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  overflow: hidden;
+
+}
+
+.signin{
+  background:
+  linear-gradient(
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)
+  ),
+  url('../public/netflix3.jpg');
+
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  overflow: hidden;
+
+}
+
+.signUp{
+  background:
+  linear-gradient(
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)
+  ),
+  url('../public/netflix3.jpg');
+
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.nav{
+  width: 100%;
+  height: 80px;
+  background-color: black;
+  opacity: .7;
+  display: flex;
+  justify-content: space-between;
+  
+  
+}
+
+
+.logo{
+  color: red;
+  margin-left: 100px;
+  
+}
+.navLink{
+  color: red;
+  text-decoration: none;
+  margin-right: 100px;
+  
+  
+}
+
+
+
+.login{
+  background:
+  linear-gradient(
+    rgba(0, 0, 0, 0.8),
+    rgba(0, 0, 0, 0.7)
+  );
+  
+  width: 300px;
+  height: 400px;
+  margin: auto;
+
+  display: grid;
+  margin-top: 150px;
+  
+
+}
+
+.signUpForm{
+  background:
+  linear-gradient(
+    rgba(0, 0, 0, 0.8),
+    rgba(0, 0, 0, 0.7)
+  );
+  
+  width: 300px;
+  height: 450px;
+  margin: auto;
+
+  display: grid;
+  background:
+  linear-gradient(
+    rgba(0, 0, 0, 0.8),
+    rgba(0, 0, 0, 0.7)
+  );
+  
+  width: 300px;
+  height: 400px;
+  margin: auto;
+
+  display: grid;
+  margin-top: 100px;
+  
+  
+}
+.subscription{
+  width:100%;
+  height: 500px;
+  margin-top: 100px;
+
+  background:
+  linear-gradient(
+    rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0.5)
+  );
+  display: grid;
+  align-items: center;
+}
+.subscriptionList{
+  width:100%;
+  height:400px;
+
+  display: flex;
+  justify-content:space-between; 
+  
+  
+}
+.subscriptionList li{
+ 
+  width: 400px;
+  height: 220px;
+  background:
+  linear-gradient(
+    rgba(0, 0, 0, 0.8),
+    rgba(0, 0, 0, 0.7)
+  );
+  /* display: grid; */
+  /* align-items: center; */
+  margin: auto;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-bottom: 20px;
+  
+}
+
+@media screen and (max-width: 480px) {
+
+  .subscription{
+    width:100%;
+    height: 100%;
+    margin-top: 100px;
+  
+    background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.0),
+      rgba(0, 0, 0, 0.0)
+    );
+    display: grid;
+    align-items: center;
+  }
+  .subscriptionList{
+    width:100%;
+    height:100%;
+  
+    display: grid;
+    
+    margin-bottom: 40px;
+    
+    
+    
+  }
+
+  .subscriptionList li{
+ 
+    width: 400px;
+    height: 200px;
+    background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.7)
+    );
+    /* display: grid;
+    align-items: center; */
+    margin: auto;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-bottom: 20px;
+    
+  }
+
+}
+
+
+
+
+/* Add a black background color to the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background:
+  linear-gradient(
+    rgba(0, 0, 0, 0.8),
+    rgba(0, 0, 0, 0.7)
+  );
+}
+
+/* Style the links inside the navigation bar */
+.topnav h4 {
+  float: left;
+  display: block;
+  background:
+  linear-gradient(
+    rgba(0, 0, 0, 0.8),
+    rgba(0, 0, 0, 0.7)
+  );
+  color: red;
+  
+  text-align: center;
+  padding: 0px 60px;
+  font-size: 28px;
+}
+
+.topnav .signout{
+  float: right;
+  background:
+  linear-gradient(
+    rgba(0, 0, 0, 0.8),
+    rgba(0, 0, 0, 0.7)
+  );
+  color: red;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 18px;
+  border: none;
+}
+
+/* Style the search box inside the navigation bar */
+.topnav input[type=text] {
+  /* float: right; */
+  background:
+  linear-gradient(
+    rgba(0, 0, 0, 0.8),
+    rgba(0, 0, 0, 0.7)
+  );
+  padding: 6px;
+  
+  border: 1px solid red;
+  margin-top: 8px;
+  /* margin-right: 16px; */
+  font-size: 17px;
+  color: red;
+}
+
+/* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
+@media screen and (max-width: 600px) {
+  .topnav h4, .topnav input[type=text], .signout {
+    float: none;
+    display: block;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .topnav input[type=text] {
+    border: 1px solid red;
+  
+  }
+}
+
+.movieById{
+  background-position: center center;
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  
+
+}
+
+.MultiCarousel { float: left; overflow: hidden; padding: 15px;  position:relative; }
+    .MultiCarousel .MultiCarousel-inner { transition: 1s ease all; float: left; }
+        .MultiCarousel .MultiCarousel-inner .item { float: left;}
+        .MultiCarousel .MultiCarousel-inner .item > div { text-align: center; padding:10px; margin:10px; background:black; color:#666;}
+    .MultiCarousel .leftLst, .MultiCarousel .rightLst {  border-radius:50%;top:calc(50% - 20px); }
+    .MultiCarousel .leftLst { left:0; }
+    .MultiCarousel .rightLst { right:0; }
+    
+        .MultiCarousel .leftLst.over, .MultiCarousel .rightLst.over { pointer-events: none; background:black; }
