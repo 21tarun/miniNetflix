@@ -1,7 +1,7 @@
 import React from 'react'
 import {Link, useNavigate,useParams } from 'react-router-dom'
 import Carousel from "react-multi-carousel";
-import './WatchMovie.css';
+
 
 
 import "react-multi-carousel/lib/styles.css";
@@ -80,25 +80,22 @@ function WatchMovie() {
     <>
     <div className='movieById' style={{backgroundColor:"#000000" , height:"80vh" }} >
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"></link>
-        <header className='recoHeader' style={{display:"flex"}}>
+        <header >
 
-            <div className='imgreco' style={{width:"50%"}}>
-                <div className="p-5 text-center bg-image" style={{backgroundImage:`url(${data.Poster_Url}) `,backgroundRepeat: "no-repeat",backgroundSize: "380px",backgroundColor:"#000000", position:"relative",left:240}}>
+            
+                <div className="p-5 text-center bg-image" style={{backgroundImage:`url(${data.Poster_Url}) `,backgroundRepeat: "no-repeat",backgroundPosition:"center",backgroundSize: "380px",backgroundColor:"#000000", position:"relative"}}>
                     <div className="mask" style={{backgroundColor:"rgba(0, 0, 0, 0.6)", height:500,position:'relative'}}>
                     <div className="d-flex justify-content-center align-items-center h-100" style={{position:'absolute',bottom:"0px",width:"100%"}} >
+                      <div className="text-white"  >
+                          <h1 className="mb-3" style={{color:"#ff0000"}} >{data.Title}</h1>
+                          <p className="mb-3" style={{color:"#ffffff"}}>{data.Overview}</p>
+                          <button className="btn btn-outline-light btn-lg"  type="button" style={{backgroundColor:"#ff0000"}}>Play</button>
+                      </div>
+                    </div>
+                    </div>
+                </div>
+            
 
-                    </div>
-                    </div>
-                </div>
-            </div>
-            <div style={{position:"relative",top:0,width:"50%",right:0,paddingRight:"300px" ,paddingTop:"100px"}}>
-                
-                <div className="text-white"  >
-                        <h1 className="mb-3" style={{color:"#ff0000"}} >{data.Title}</h1>
-                        <p className="mb-3" style={{color:"#ffffff"}}>{data.Overview}</p>
-                        <button className="btn btn-outline-light btn-lg"  type="button" style={{backgroundColor:"#ff0000"}}>Play</button>
-                </div>
-            </div>
 
         
         </header>
